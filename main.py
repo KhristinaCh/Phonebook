@@ -130,6 +130,6 @@ if __name__ == '__main__':
     final_list_input()
 
 # код для записи файла в формате CSV
-    with open('docs/phonebook.csv', "w") as f:
+    with open('docs/phonebook.csv', "w", encoding='utf-8') as f:
       datawriter = csv.writer(f, delimiter=',')
       datawriter.writerows(final_list)
